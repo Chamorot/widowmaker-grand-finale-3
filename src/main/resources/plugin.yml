@@ -1,0 +1,23 @@
+name: Widowmaker
+version: '${project.version}'
+main: com.widowmaker.plugin.WidowmakerPlugin
+api-version: '1.21'
+description: The cursed crossbow of Skelerot
+authors: [ ]
+
+commands:
+  widowmaker:
+    description: Claim the Widowmaker crossbow (one time, forever)
+    usage: /widowmaker
+    permission: widowmaker.claim
+  owner:
+    description: Show who owns the Widowmaker
+    usage: /owner widowmaker
+
+permissions:
+  widowmaker.claim:
+    description: Allows claiming the Widowmaker crossbow
+    default: true
+  widowmaker.admin:
+    description: Admin override for Widowmaker
+    default: op
